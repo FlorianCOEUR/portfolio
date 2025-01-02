@@ -7,3 +7,64 @@
     width: 2em;
     height: 2em;
 }
+/* Barre de navigation fixe à gauche */
+.sidebar {
+    position: fixed; /* Fixe la barre de navigation */
+    top: 0;
+    left: 0; /* La place à gauche de la page */
+    width: 200px; /* Largeur de la barre */
+    height: 100vh; /* La barre occupe toute la hauteur de la fenêtre */
+    background-color: #333; /* Fond sombre */
+    padding-top: 20px; /* Espacement du haut */
+    color: white; /* Texte blanc */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    overflow-y: auto; /* Ajoute un défilement vertical si nécessaire */
+    padding-bottom: 20px; /* Pour un peu d'espace en bas */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757; /* Effet au survol */
+}
+
+/* Contenu principal */
+main {
+    margin-left: 220px; /* Décale le contenu à droite pour ne pas être masqué par la barre */
+    padding: 20px;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+ /* Conteneur flex */
+ .conteneur {
+    display: flex; /* Met les éléments en ligne */
+    align-items: center; /* Aligne verticalement le contenu au centre */
+}
+/* Style de l'image */
+.image {
+    width: 200px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+/* Style du texte */
+.texte {
+    font-size: 18px; /* Taille du texte */
+    color: #333; /* Couleur du texte */
+}
