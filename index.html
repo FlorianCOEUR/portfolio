@@ -9,25 +9,17 @@
     <!-- Ajout du header-->
     <div id="header-placeholder"></div>
 
-    <h1>Bienvenue sur mle Portfolio de Florian COEUR</h1>
+    <h1>Bienvenue sur le Portfolio de Florian COEUR</h1>
     <p>Ceci est la page d'accueil.</p>
 
     <script>
         // Charger le contenu du fichier header.html et l'injecter dans l'élément avec l'ID 'header-placeholder'
         fetch('header.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Erreur HTTP : ${response.status}`);
-                }
-                return response.text();
-            })
+            .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
             })
-            .catch(error => {
-                console.error('Erreur de chargement du header:', error);
-                alert("Impossible de charger le fichier header.html");
-            });
+            .catch(error => console.error('Erreur de chargement du header:', error));
     </script>
 
 </body>
