@@ -12,14 +12,25 @@
     <h1>Bienvenue sur le Portfolio de Florian COEUR</h1>
     <p>Ceci est la page d'accueil.</p>
 
+    <div id="footer-placeholder"></div>
+
     <script>
         // Charger le contenu du fichier header.html et l'injecter dans l'élément avec l'ID 'header-placeholder'
-        fetch('header.html')
+        fetch('includes/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
             })
             .catch(error => console.error('Erreur de chargement du header:', error));
+    </script>
+    <script>
+        // Charger le contenu du fichier footer.html et l'injecter dans l'élément avec l'ID 'footer-placeholder'
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur de chargement du footer:', error));
     </script>
 
 </body>
