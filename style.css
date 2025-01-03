@@ -68,3 +68,6 @@ section {
     font-size: 18px; /* Taille du texte */
     color: #333; /* Couleur du texte */
 }
+h2{
+    padding-top: 40px;
+}
